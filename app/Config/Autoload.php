@@ -64,7 +64,9 @@ class Autoload extends AutoloadConfig
      *
      * @var array<string, string>
      */
-    public $classmap = [];
+    public $classmap = [
+        // "Helloworld" =>  APPPATH . "Controllers/Items/Helloworld.php"
+    ];
 
     /**
      * -------------------------------------------------------------------
