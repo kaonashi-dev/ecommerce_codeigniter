@@ -4,17 +4,26 @@
 <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
    <title> ADMIN - APP </title>
    <!-- Fonts and icons -->
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
    <!-- CSS Files -->
-   <link rel="stylesheet" href="<?php echo base_url('admin/css/material_dashboard.min.css') ?>">
-   <link rel="stylesheet" href="<?php echo base_url('css/font_awesome_css_all.min.css') ?>">
+   <link rel="stylesheet" href="<?= base_url('assets/css/material_dashboard.min.css') ?>">
+   <link rel="stylesheet" href="<?= base_url('assets/css/font_awesome_css_all.min.css') ?>">
+
+   <!-- JS Files -->
+   <script src="<?= base_url('assets/js/vue.js') ?>"></script>
+   <script src="<?php echo base_url('assets/js/axios.min.js') ?>"></script>
 
 </head>
 
 <body class="g-sidenav-show  bg-gray-200">
+
+   <input type="hidden" id="site_url" value="<?php echo site_url(); ?>">
+   <input type="hidden" id="base_url" value="<?php echo base_url(); ?>">
+
+   <!-- JS -->
+   <script src="<?= base_url('vue/main.js') ?>"></script>
 
    <?= $menu ?>
    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
@@ -27,7 +36,7 @@
          <?= $content ?>
 
          <?= $footer ?>
-      
+
       </div>
    </main>
 
@@ -61,10 +70,11 @@
       </div>
    </div>
 
-   <!--   Core JS Files   -->
-   <script src="<?= base_url('js/popper.min.js') ?>"></script>
-   <script src="<?= base_url('admin/js/bootstrap.min.js') ?>"></script>
-   <script src="<?= base_url('admin/js/material_dashboard.min.js') ?>"></script>
+   <!-- JS Files   -->
+   <script src="<?= base_url('assets/js/popper.min.js') ?>"></script>
+   <script src="<?= base_url('assets/js/bootstrap.min.js') ?>"></script>
+   <script src="<?= base_url('assets/js/sweetalert2.all.min.js') ?>"></script>
+   <script src="<?= base_url('assets/js/material_dashboard.min.js') ?>"></script>
 </body>
 
 </html>
