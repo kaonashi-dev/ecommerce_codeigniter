@@ -76,7 +76,7 @@ Vue.createApp({
                         if (res.data.results) {
                            Swal.fire({
                               title: 'REGISTRO EXITOSO',
-                              text: "La categoria de registro correctamente",
+                              text: "La categoria se registro correctamente",
                               icon: 'success',
                            });
                            document.querySelector('#btnCloseModalCreate').click();

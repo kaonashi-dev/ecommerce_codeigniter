@@ -45,4 +45,15 @@ class CategoryModel extends Model
       $this->builder->insert($data);
       return $this->db->insertID();
    }
+
+   /**
+    * Devuelve información basica de las categorias disponibles
+    */
+   public function getListCategory()
+   {
+      $this->builder->select('id, name');
+      $this->builder->where('state', 1);
+      $query = $this->builder->get();
+      return $query->getResultArray();
+   }
 }

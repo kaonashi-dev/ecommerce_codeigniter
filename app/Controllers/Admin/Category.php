@@ -63,6 +63,17 @@ class Category extends BaseController
    }
 
    /**
+    * Devuelve el id y nombre de las categorias activas
+    */
+   public function getInfoCategory()
+   {
+      $data = $this->categoryModel->getListCategory();
+
+      $json = array('results' => $data);
+      return $this->respond($json);
+   }
+
+   /**
     * Vista principal
     */
    public function index(): void

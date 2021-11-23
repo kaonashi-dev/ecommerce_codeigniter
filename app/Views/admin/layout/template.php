@@ -9,7 +9,7 @@
    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
    <!-- CSS Files -->
    <link rel="stylesheet" href="<?= base_url('assets/css/material_dashboard.min.css') ?>">
-   <link rel="stylesheet" href="<?= base_url('assets/css/font_awesome_css_all.min.css') ?>">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <!-- JS Files -->
    <script src="<?= base_url('assets/js/vue.js') ?>"></script>
