@@ -33,12 +33,20 @@ $menu = array(
       <ul class="navbar-nav">
 
          <?php foreach ($menu as $item) : ?>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                <a class="nav-link text-white" href="<?= site_url($item['url']) ?>">
                   <div class="text-white text-center me-3 d-flex align-items-center justify-content-center">
                      <i class="<?= $item['icon'] ?>" style="font-size: 1.5rem;"></i>
                   </div>
                   <span class="nav-link-text ms-1"><?= $item['name'] ?></span>
+               </a>
+            </li> -->
+            <li class="nav-item">
+               <a class="nav-link" href="<?= site_url($item['url']) ?>">
+                  <div class="icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center text-dark">
+                     <i class="<?= $item['icon'] ?> text-dark" style="font-size: 1.3rem;"></i>
+                  </div>
+                  <span class="nav-link-text ms-1 text-white"><?= $item['name'] ?></span>
                </a>
             </li>
          <?php endforeach ?>

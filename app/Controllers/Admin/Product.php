@@ -82,7 +82,6 @@ class Product extends BaseController
       foreach ($products as $product) {
          $data[] = array(
             'id' => $product['id'],
-            'name' => $product['name'],
             'idcategory' => $product['idcategory'],
             'name' => $product['name'],
             'description' => $product['description'],
